@@ -1,0 +1,183 @@
+
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Sơn Tây - Xứ Đoài - Miền di sản</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700;800&family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+<header class="header">
+    <div class="logo">
+        <span class="logo-icon">🏛️</span>
+        <div>
+            <h2>SƠN TÂY</h2>
+            <p>XỨ ĐOÀI - MIỀN DI SẢN</p>
+        </div>
+    </div>
+
+    <nav class="navbar">
+        <a href="#" onclick="showHome(); return false;">Trang chủ</a>
+        <a href="#di-san" onclick="showHome(); return false;">Khám phá di sản</a>
+        <a href="#gioi-thieu" onclick="showHome(); return false;">Giới thiệu</a>
+    </nav>
+</header>
+
+<!-- TRANG CHỦ -->
+<main id="homePage">
+
+    <section class="hero">
+        <div class="hero-content">
+            <p class="hero-subtitle">
+            <h1>SƠN TÂY<br><span>MIỀN DI SẢN</span></h1>
+            <p class="hero-description">
+                
+            </p>
+            <a href="#di-san" class="main-button">KHÁM PHÁ NGAY ↓</a>
+        </div>
+    </section>
+
+    <section class="intro section" id="gioi-thieu">
+        <p class="section-label">VÙNG ĐẤT VĂN HÓA</p>
+        <h2>Khám phá vẻ đẹp Xứ Đoài</h2>
+        <div class="title-line"></div>
+        <p class="intro-text">
+            Sơn Tây - vùng đất giàu truyền thống lịch sử và văn hóa,
+            nổi tiếng với những công trình kiến trúc cổ kính, những
+            ngôi làng lâu đời và các di tích mang đậm dấu ấn thời gian.
+            Mỗi di sản là một câu chuyện, góp phần tạo nên bản sắc
+            riêng của vùng đất Xứ Đoài.
+        </p>
+    </section>
+
+    <section class="heritage section" id="di-san">
+        <p class="section-label">HÀNH TRÌNH KHÁM PHÁ</p>
+        <h2>Những miền di sản</h2>
+        <div class="title-line"></div>
+        <p class="section-description">
+        </p>
+
+        <div class="heritage-grid">
+
+            <article class="heritage-card"
+                onclick="openHeritage('thanhco')">
+                <div class="card-image">
+                    <img src="./thanh_co.jpg"
+                         alt="Kiến trúc cổ">
+                    <span class="card-number">01</span>
+                </div>
+                <div class="card-content">
+                    <p class="card-category">DI TÍCH LỊCH SỬ</p>
+                    <h3>Thành cổ Sơn Tây</h3>
+                    <p>Khám phá công trình thành cổ độc đáo được xây bằng đá ong.</p>
+                    <a href="./sontay2.jpg" class="main-button"> KHÁM PHÁ →</a>
+                </div>
+            </article>
+
+            <article class="heritage-card"
+                onclick="openHeritage('denva')">
+                <div class="card-image">
+                    <img src="./den_va.jpg"
+                         alt="Kiến trúc đền chùa">
+                    <span class="card-number">02</span>
+                </div>
+                <div class="card-content">
+                    <p class="card-category">DI SẢN TÂM LINH</p>
+                    <h3>Đền Và</h3>
+                    <p>Không gian văn hóa tâm linh gắn với tín ngưỡng thờ Tản Viên Sơn Thánh.</p>
+                    <span class="explore-link">KHÁM PHÁ →</span>
+                </div>
+            </article>
+
+            <article class="heritage-card"
+                onclick="openHeritage('duonglam')">
+                <div class="card-image">
+                    <img src="./duonglam3.jpg"
+                         alt="Kiến trúc làng cổ">
+                    <span class="card-number">03</span>
+                </div>
+                <div class="card-content">
+                    <p class="card-category">DI SẢN LÀNG CỔ</p>
+                    <h3>Làng cổ Đường Lâm</h3>
+                    <p>Nét đẹp làng quê Bắc Bộ với những ngôi nhà cổ và đường làng rêu phong.</p>
+                    <span class="explore-link">KHÁM PHÁ →</span>
+                </div>
+            </article>
+
+            <article class="heritage-card"
+                onclick="openHeritage('chuamia')">
+                <div class="card-image">
+                    <img src="./chua_mia2.jpg"
+                         alt="Kiến trúc chùa">
+                    <span class="card-number">04</span>
+                </div>
+                <div class="card-content">
+                    <p class="card-category">DI SẢN KIẾN TRÚC</p>
+                    <h3>Chùa Mía</h3>
+                    <p>Ngôi chùa cổ nổi tiếng với hệ thống tượng Phật phong phú và nghệ thuật đặc sắc.</p>
+                    <span class="explore-link">KHÁM PHÁ →</span>
+                </div>
+            </article>
+
+        </div>
+    </section>
+
+    <section class="quote-section">
+        <p><img src="./thumbnail.jpg"></p>
+        <span>SON TAY - XU DOAI HERITAGE</span>
+    </section>
+
+</main>
+
+<!-- KHU VỰC TRANG NỘI DUNG RIÊNG -->
+<main id="detailPage" class="detail-page hidden">
+
+    <div class="detail-banner" id="detailBanner">
+        <div class="detail-banner-content">
+            <p class="section-label">KHÁM PHÁ DI SẢN</p>
+            <h1 id="detailTitle">THÀNH CỔ SƠN TÂY</h1>
+            <p id="detailSubtitle">Dấu ấn lịch sử vùng đất Xứ Đoài</p>
+        </div>
+    </div>
+
+    <div class="detail-container">
+        <button class="back-button" onclick="showHome()">
+            ← QUAY LẠI TRANG CHỦ
+        </button>
+
+        <div class="detail-layout">
+            <aside class="detail-menu">
+                <h3>MỤC LỤC</h3>
+                <div id="detailMenu"></div>
+            </aside>
+
+            <article class="detail-content" id="detailContent">
+            </article>
+        </div>
+    </div>
+
+</main>
+
+<footer class="footer">
+    <h2>SƠN TÂY - XỨ ĐOÀI</h2>
+    <p>MIỀN DI SẢN - KẾT NỐI QUÁ KHỨ, LAN TỎA TƯƠNG LAI</p>
+    <div class="footer-line"></div>
+    <p class="copyright">
+        THCS Sơn Tây - Phân Hiệu Sơn Lộc
+    </p>
+</footer>   
+
+<button id="topButton" onclick="window.scrollTo({top:0,behavior:'smooth'})">
+    ↑
+</button>
+
+<script src="script.js"></script>
+</body>
+</html>
