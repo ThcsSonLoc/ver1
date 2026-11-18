@@ -279,7 +279,7 @@ body {
 }
 
 .quote-section p img {
-    max-width: 150px; /* Giới hạn chiều rộng tối đa của ảnh (bạn có thể thay đổi số này tùy ý) */
+    max-width: 400px; /* Giới hạn chiều rộng tối đa của ảnh (bạn có thể thay đổi số này tùy ý) */
     height: auto;     /* Giữ tỷ lệ gốc của ảnh */
     display: inline-block;
 }
