@@ -278,6 +278,11 @@ body {
     text-align: center;
 }
 
+.quote-section p img {
+    max-width: 150px; /* Giới hạn chiều rộng tối đa của ảnh (bạn có thể thay đổi số này tùy ý) */
+    height: auto;     /* Giữ tỷ lệ gốc của ảnh */
+    display: inline-block;
+}
 .quote-section p {
     font-family: 'Playfair Display', serif;
     font-size: clamp(22px, 4vw, 32px);
