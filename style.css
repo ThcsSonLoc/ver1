@@ -209,7 +209,7 @@ body {
 }
 
 .card-image {
-    height: 700px;
+    height: 500px;
     position: relative;
     overflow: hidden;
 }
@@ -485,6 +485,25 @@ body {
 
     .header {
         padding: 0 4%;
+    }
+}
+
+/* HIỂN THỊ ẢNH ĐẦY ĐỦ TRÊN ĐIỆN THOẠI */
+@media (max-width: 768px) {
+    .heritage-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .card-image {
+        height: auto !important;
+        overflow: hidden;
+    }
+
+    .card-image img {
+        width: 100%;
+        height: auto !important;
+        object-fit: contain !important;
+        display: block;
     }
 }
 
